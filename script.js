@@ -1,12 +1,17 @@
-// Show feature clicked
-function showFeature(featureName) {
-    alert(featureName + " is opening...");
+function showRegister() {
+    document.getElementById("loginForm").classList.remove("active");
+    document.getElementById("registerForm").classList.add("active");
 }
 
-// Dark/Light Mode Toggle
-function toggleTheme() {
-    document.body.classList.toggle("dark-mode");
+function showLogin() {
+    document.getElementById("registerForm").classList.remove("active");
+    document.getElementById("loginForm").classList.add("active");
 }
 
-// Console greeting
-console.log("Advanced Dashboard Loaded Successfully!");
+function goToDashboard() {
+    window.location.href = "dashboard.html";
+}
+
+function goToWelcome() {
+    window.location.href = "welcome.html";
+}
